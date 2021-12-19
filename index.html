@@ -18,6 +18,7 @@
 				
 				</audio>
 				<script>
+				// 这里使用了微信自带的WeixinJSBridgeReady事件
 				document.addEventListener('WeixinJSBridgeReady', function() {
 				    document.getElementById('audios').play()
 				})
@@ -28,5 +29,9 @@
 					<input type="text" placeholder="请输入你的弹幕" />
 					<input type="button" value="发送弹幕" />
 				</div>
+				<video width="360px" height="600px" controls="controls" autoplay="autoplay" loop="loop">
+					<source src="https://v.douyin.com/81nuEt9/">
+					</source>
+				</video>
 	</body>
 </html>
