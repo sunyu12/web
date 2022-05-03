@@ -52,31 +52,7 @@
       <font color="yellow" size="17">
         只能用电脑玩,嘻嘻
       </font>
-    </marquee>
-    <audio style="display:none; height: 200px" id="mymusic" preload="auto" src="http://m801.music.126.net/20220503221157/0eb80b6a7c573ea386239a90b0ab1e38/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/13693489466/c38e/d588/b9b3/67f38d2b2f0c1498597d37050860b041.mp3" loop="loop"></audio>
-
-    </audio>
-    <script>
-      function audioAutoPlay(id){
-        var audio = document.getElementById(id);
-        audio.play();
-        document.addEventListener("WeixinJSBridgeReady",      function () {
-          audio.play();
-        }, false);
-
-      }
-      document.addEventListener('touchstart', function() {
-        document.getElementById('mymusic').play()
-      })
-
-      audioAutoPlay('myMusic');
-
-
-
-    </script>
-
-
-    <script>
+        <script>
       /**
        * @author ccbbs
        * @file 解决安卓webview自动播放背景音乐的问题
