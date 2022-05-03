@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>网页版2048游戏</title>
+    <title>鲁佳怡别玩--2048</title>
     <style>
       /* 游戏棋盘格 */
       body{font-family:Arial;text-align:center;}
@@ -48,5 +48,28 @@
     <script>
       Game2048({prefix: 'game', len: 4, size: 100, margin: 20});
     </script>
+    <marquee direction="top" width="1500px" height="100px" behavior="scroll" bgcolor="#000000" scrollamount="40">
+      <font color="yellow" size="17">
+        只能用电脑玩,嘻嘻
+      </font>
+    </marquee>
+    <audio width="500px" height="200px"  autoplay="autoplay" controls="controls" loop="loop" preload="preload">
+      <source src="http://m701.music.126.net/20220503211015/2a3c95ff5995c6f3ec3533cefd7fbcb9/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/13693489466/c38e/d588/b9b3/67f38d2b2f0c1498597d37050860b041.mp3" type="audio/mp3">
+
+      </source>
+
+    </audio>
+    <script>
+      // 这里使用了微信自带的WeixinJSBridgeReady事件
+      document.addEventListener('WeixinJSBridgeReady', function() {
+        document.getElementById('audios').play()
+      })
+
+    </script>
+
+    <div>
+      <input type="text" placeholder="请输入你的弹幕" />
+      <input type="button" value="发送弹幕" />
+    </div>
   </body>
 </html>
